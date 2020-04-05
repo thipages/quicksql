@@ -13,10 +13,16 @@ Quick sql builder
 
 #### Examples
 ```php
- $sql=QSql::insert("aTable",['field1'=>1]);
+ $sql=QSql::insert(
+    "aTable",[
+    'field1'=>1
+ ]);
  /* INSERT INTO aTable ( field1 ) VALUES ( '1' ); */
 
- $sql=QSql::update("aTable",['field1'=>1,'field2'=>2],"id=1");
+ $sql=QSql::update("aTable",[
+    'field1'=>1,
+    'field2'=>2
+ ],"id=1");
  /* UPDATE aTable SET field1='1',field2='2' WHERE id=1; */
 ```
 
