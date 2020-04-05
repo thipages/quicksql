@@ -15,6 +15,10 @@ class Tests_QSql {
                 QSql::update("aTable",['field1'=>1,'field2'=>2],"id=1"),
                 "UPDATE aTable SET field1='1',field2='2' WHERE id=1;",
                 'update() with 2 fields'
+            ],[
+                QSql::delete("aTable","id=1"),
+                'DELETE FROM aTable WHERE id=1;',
+                'delete()'
             ]
             
         ];

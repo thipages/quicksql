@@ -9,6 +9,7 @@ Quick sql builder
 ```php
     insert  ($tableName, $keyValues)
     update  ($tableName, $keyValues, $where)
+    delete  ($tableName, $where)
 ```
 
 #### Examples
@@ -24,5 +25,9 @@ Quick sql builder
     'field2'=>2
  ],"id=1");
  /* UPDATE aTable SET field1='1',field2='2' WHERE id=1; */
+
+ $sql=QSql::delete("aTable","id=1");
+ /* DELETE FROM aTable WHERE id=1; */
+
 ```
 
