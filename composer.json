@@ -1,0 +1,22 @@
+{
+    "name": "thipages/quicksql",
+    "version": "v0.1.0",
+    "description": "Quick sql builder",
+    "type": "library",
+    "keywords" : ["sql","php","insert","update","delete","select"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thierry PAGES",
+            "email": "thipages@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-0": {"thipages\\quick\\": "src/"}
+    },
+    "require": {},
+    "require-dev": {
+        "thipages/quicktag": "^0.1.1"
+    }
+}
