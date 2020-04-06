@@ -21,9 +21,6 @@ class QSql {
         ]);
     }
     public static function delete($tableName,$where) {
-        return join(" ",[
-            "DELETE FROM $tableName",
-            "WHERE ".$where.";"
-        ]);
+        return "DELETE FROM $tableName WHERE $where;";
     }
 }
