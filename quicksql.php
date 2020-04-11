@@ -18,4 +18,7 @@ class QSql {
             "WHERE ".$where.";"
         ]);
     }
+    public static function delete($tableName,$where) {
+        return "DELETE FROM $tableName WHERE $where;";
+    }
 }
