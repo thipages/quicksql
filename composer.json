@@ -17,6 +17,6 @@
     },
     "require": {},
     "require-dev": {
-        "thipages/quicktag": "^0.1.1"
+        "thipages/quicktable": "v0.3.0"
     }
 }
