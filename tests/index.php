@@ -1,9 +1,8 @@
 <?php
 include ('../vendor/autoload.php');
 include_once('Tests_QSql.php');
-include_once('Tests.php');
-
-$output=Tests::getOutput(
+use thipages\quick\tests\QTests;
+$output=QTests::getOutput(
     [Tests_QSql::class]
 );
 echo($output);
