@@ -1,7 +1,7 @@
 <?php
 use thipages\quick\QSql;
 class Tests_QSql {
-    public static function tests() {
+    public static function dataSet() {
         return [
             [
                 QSql::insert("aTable",['field1'=>1]),
