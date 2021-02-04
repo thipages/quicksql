@@ -2,6 +2,7 @@
 
 namespace thipages\quick;
 class QSql {
+    // todo : add a third argument for batch insert with commun def
     public static function insert ($tableName, $keyValues) {
         return join(" ",[
             "INSERT INTO $tableName (",
