@@ -1,6 +1,6 @@
 {
     "name": "thipages/quicksql",
-    "version": "v0.1.2",
+    "version": "v0.1.3",
     "description": "Quick sql builder",
     "type": "library",
     "keywords" : ["sql","php","insert","update","delete","select"],

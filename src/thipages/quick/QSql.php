@@ -2,23 +2,22 @@
 
 namespace thipages\quick;
 class QSql {
-    public static function insert($tableName, $keyValues,$values=null) {
+    public static function insert($tableName, $keysOrkeyValues,$values=null) {
         if (is_null($values)) {
             return join(" ",[
                 "INSERT INTO $tableName (",
-                join(',',array_keys($keyValues)),
+                join(',',array_keys($keysOrkeyValues)),
                 ") VALUES (",
-                join(',',array_map(function($v){return "'$v'";},array_values($keyValues))),
+                join(',',array_map(function($v){return "'$v'";},array_values($keysOrkeyValues))),
                 ");"
             ]);
         }
         return join(" ",[
             "INSERT INTO $tableName (",
-            join(',',array_values($keyValues)),
-            ") VALUES ",
-            join(',',array_map(function($v){return "(".join(',',array_map(function($v){return "'$v'";},$v)).")";},$values)),
-            ";"
-        ]);
+            join(',',array_values($keysOrkeyValues)),
+            ") VALUES",
+            join(',',array_map(function($v){return "(".join(',',array_map(function($v){return "'$v'";},$v)).")";},$values))
+        ]).";";
     }
     public static function update($tableName, $keyValues,$where) {
         $set=[];

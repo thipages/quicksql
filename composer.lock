@@ -1,0 +1,144 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "452f9624203d42339f078d41abe12e7a",
+    "packages": [],
+    "packages-dev": [
+        {
+            "name": "thipages/quicktable",
+            "version": "v0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thipages/quicktable.git",
+                "reference": "748542a34655d76f81adb217ae036a6e5eca97be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thipages/quicktable/zipball/748542a34655d76f81adb217ae036a6e5eca97be",
+                "reference": "748542a34655d76f81adb217ae036a6e5eca97be",
+                "shasum": ""
+            },
+            "require": {
+                "thipages/quicktag": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "thipages\\quick\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thierry PAGES",
+                    "email": "thipages@gmail.com"
+                }
+            ],
+            "description": "Quick html table builder",
+            "keywords": [
+                "html",
+                "quick",
+                "table"
+            ],
+            "time": "2020-04-11T17:50:13+00:00"
+        },
+        {
+            "name": "thipages/quicktag",
+            "version": "v0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thipages/quicktag.git",
+                "reference": "a552861341290886dbbda4286935c3a73b87cf6e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thipages/quicktag/zipball/a552861341290886dbbda4286935c3a73b87cf6e",
+                "reference": "a552861341290886dbbda4286935c3a73b87cf6e",
+                "shasum": ""
+            },
+            "require-dev": {
+                "thipages/quicktests": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "thipages\\quick\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thierry PAGES",
+                    "email": "thipages@gmail.com"
+                }
+            ],
+            "description": "Quick html tags builder",
+            "keywords": [
+                "attributes",
+                "div",
+                "html",
+                "quick",
+                "tag",
+                "void"
+            ],
+            "time": "2020-04-13T10:12:42+00:00"
+        },
+        {
+            "name": "thipages/quicktests",
+            "version": "v0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thipages/quicktests.git",
+                "reference": "978cd8be0de4725aaae2ee1e9e04ef7f3c69640d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thipages/quicktests/zipball/978cd8be0de4725aaae2ee1e9e04ef7f3c69640d",
+                "reference": "978cd8be0de4725aaae2ee1e9e04ef7f3c69640d",
+                "shasum": ""
+            },
+            "require": {
+                "thipages/quicktable": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "thipages\\quick\\tests\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thierry PAGES",
+                    "email": "thipages@gmail.com"
+                }
+            ],
+            "description": "Quick PHP unit tests",
+            "keywords": [
+                "html",
+                "quick",
+                "unit tests"
+            ],
+            "time": "2020-04-12T23:30:18+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
